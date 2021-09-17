@@ -1,28 +1,24 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Rest;
 using Nodes.API.Http.Client.Support;
+using Nodes.API.Models;
+using Nodes.API.Queries;
 
 namespace Nodes.MeteringSystem.Sample
 {
-    class Program
+    internal class Program
     {
-        private ServiceProvider _services;
+        private readonly ServiceProvider _services;
 
-        static async Task Main(string[] args)
+        private static async Task Main(string[] args)
         {
             await new Program().Run();
-            // DSO example:
-            
-            //set ut authorization
-            // Get asset grid assignments
-            // create meter reading sample values
-            // Save to NODES
-            // Get data as CSV
-            // Delete data
             
             // FSP example:
             //set ut authorization
@@ -37,17 +33,56 @@ namespace Nodes.MeteringSystem.Sample
         private async Task Run()
         {
             var client = _services.GetRequiredService<NodesClient>();
-            var me = await client.Users.GetCurrentUser();
-            Console.WriteLine(me);
+            
+            //Example 1: DSO Uploads meter readings for AssetGridAssignments, gets them as CSV, and finally deletes them.
+            var assetGridAssignmentsToUse = new[]
+            {
+                "08cc11ea-ed86-4a3b-a0a9-2f2870141171",
+                "f1b54ebc-6e94-4f13-8ac7-cb59ac0eb926"
+            };
+            
+            var searchFilters = new List<KeyValuePair<string, IFilter>>
+            {
+                KeyValuePair.Create(nameof(AssetGridAssignment.Id), OneOfMatcher.OneOf(assetGridAssignmentsToUse))
+            };
+            
+            var assetGridAssignments = (await client.AssetGridAssignments.Search(searchFilters)).Items;
+            var start = new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0,
+                0, 0, 0, TimeSpan.Zero);
+            var end = start.AddHours(1);
+
+            var meterReadings = CreateAssetGridAssignmentMeterReadings(assetGridAssignments, start, end).ToList();
         }
 
-        public static IConfigurationRoot BuildConfigurationRoot() =>
+        private IEnumerable<MeterReading> CreateAssetGridAssignmentMeterReadings(
+            IReadOnlyCollection<AssetGridAssignment> assetGridAssignments,
+            DateTimeOffset from,
+            DateTimeOffset to)
+        {
+            var meterReadings = new List<MeterReading>();
+            while (from < to)
+            {
+                meterReadings.AddRange(assetGridAssignments.Select(aga => new MeterReading
+                {
+                    AssetGridAssignmentId = aga.Id,
+                    PeriodFrom = @from,
+                    PeriodTo = @from.AddMinutes(1),
+                    AveragePowerProduction = 1
+                }));
+
+                from = from.AddMinutes(1);
+            }
+
+            return meterReadings;
+        }
+
+        private static IConfigurationRoot BuildConfigurationRoot() =>
             new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json")
                 .AddJsonFile("appsettings.local.json", optional: true)
-                .Build();            
-        
-        public Program() =>
+                .Build();
+
+        private Program() =>
             _services = new ServiceCollection()
 
                 // Read appsettings and appsettings. Customize if needed.
