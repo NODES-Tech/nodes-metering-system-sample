@@ -37,24 +37,39 @@ namespace Nodes.MeteringSystem.Sample
             //Example 1: DSO Uploads meter readings for AssetGridAssignments, gets them as CSV, and finally deletes them.
             var assetGridAssignmentsToUse = new[]
             {
-                "08cc11ea-ed86-4a3b-a0a9-2f2870141171",
-                "f1b54ebc-6e94-4f13-8ac7-cb59ac0eb926"
+                "225b356b-e953-4e06-a953-81533dfbd800",
+                "3c9e5053-c997-4bc5-8ec0-da876a792bad"
             };
             
-            var searchFilters = new List<KeyValuePair<string, IFilter>>
+            var agaSearchFilters = new List<KeyValuePair<string, IFilter>>
             {
                 KeyValuePair.Create(nameof(AssetGridAssignment.Id), OneOfMatcher.OneOf(assetGridAssignmentsToUse))
             };
             
-            var assetGridAssignments = (await client.AssetGridAssignments.Search(searchFilters)).Items;
+            var assetGridAssignments = (await client.AssetGridAssignments.Search(agaSearchFilters)).Items;
             var start = new DateTimeOffset(DateTimeOffset.Now.Year, DateTimeOffset.Now.Month, DateTimeOffset.Now.Day, 0,
                 0, 0, 0, TimeSpan.Zero);
             var end = start.AddHours(1);
+            var meterReadings = CreateExampleData(assetGridAssignments, start, end).ToList();
 
-            var meterReadings = CreateAssetGridAssignmentMeterReadings(assetGridAssignments, start, end).ToList();
+            // Insert new meter readings
+            await client.MeterReadings.CreateMultiple(meterReadings);
+
+            // Search for existing meter readings for these ids and period
+            var mrSearchFilters = new List<KeyValuePair<string, IFilter>>
+            {
+                KeyValuePair.Create(nameof(MeterReading.AssetGridAssignmentId), OneOfMatcher.OneOf(assetGridAssignmentsToUse)),
+                KeyValuePair.Create(nameof(MeterReading.PeriodFrom), new DateTimeRange { StartOnOrAfter = start } as IFilter),
+                KeyValuePair.Create(nameof(MeterReading.PeriodTo), new DateTimeRange { EndBefore = end.AddMinutes(10) } as IFilter)
+                // KeyValuePair.Create(nameof(MeterReading.PeriodFrom), DateTimeRange.InRange(start, end.AddSeconds(1)))
+            };
+            var foundMeterReadings = await client.MeterReadings.Search(mrSearchFilters, SearchOptions.Max);
+
+            // Delete meter readings for these ids using the same search filter
+            var deletedItemCount = await client.MeterReadings.Delete(mrSearchFilters);
         }
 
-        private IEnumerable<MeterReading> CreateAssetGridAssignmentMeterReadings(
+        private IEnumerable<MeterReading> CreateExampleData(
             IReadOnlyCollection<AssetGridAssignment> assetGridAssignments,
             DateTimeOffset from,
             DateTimeOffset to)
