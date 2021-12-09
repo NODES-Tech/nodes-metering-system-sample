@@ -22,12 +22,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d9a7d430-c028-4844-9d62-fb7af9ee13a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/modules.xml" beforeDir="false" />
+    <list default="true" id="d9a7d430-c028-4844-9d62-fb7af9ee13a7" name="Default Changelist" comment="Add more comments to example">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +124,7 @@
       <workItem from="1636982562584" duration="861000" />
       <workItem from="1638537330873" duration="708000" />
       <workItem from="1639035323929" duration="2489000" />
-      <workItem from="1639038077481" duration="3682000" />
+      <workItem from="1639038077481" duration="5188000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631863012579</created>
@@ -172,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632387574453</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add more comments to example">
+      <created>1639050894958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639050894958</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +202,26 @@
     <MESSAGE value="Add authentication" />
     <MESSAGE value="Create meter reading data" />
     <MESSAGE value="Update sample and do some appsettings changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update sample and do some appsettings changes" />
+    <MESSAGE value="Add more comments to example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more comments to example" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Program.cs</url>
+          <line>78</line>
+          <properties documentPath="C:\projects\nodes-metering-system-sample\Program.cs" initialLine="76" containingFunctionPresentation="method 'Run'">
+            <startOffsets>
+              <option value="4205" />
+            </startOffsets>
+            <endOffsets>
+              <option value="4439" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

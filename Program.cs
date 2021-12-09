@@ -57,12 +57,14 @@ namespace Nodes.MeteringSystem.Sample
             // be replaced. If overwriting data is the intent, the old meter readings must first be deleted.
             await client.MeterReadings.CreateMultiple(meterReadings);
 
-            // Create set of search filters to search for the newly inserted data
+            // Create set of search filters to search for the newly inserted data. The perhaps slightly weird-looking
+            // PeriodFrom/To filters are written this way to also find meter readings that partially overlap start/end.
+            // One second is added to StartOnOrAfter since the NODES API does not currently have "StartAfter".
             var mrSearchFilters = new List<KeyValuePair<string, IFilter>>
             {
                 KeyValuePair.Create(nameof(MeterReading.AssetGridAssignmentId), OneOfMatcher.OneOf(assetGridAssignmentsToUse)),
-                KeyValuePair.Create(nameof(MeterReading.PeriodFrom), new DateTimeRange { StartOnOrAfter = start } as IFilter),
-                KeyValuePair.Create(nameof(MeterReading.PeriodTo), new DateTimeRange { EndBefore = end.AddMinutes(10) } as IFilter)
+                KeyValuePair.Create(nameof(MeterReading.PeriodTo), new DateTimeRange { StartOnOrAfter = start.AddSeconds(1) } as IFilter),
+                KeyValuePair.Create(nameof(MeterReading.PeriodFrom), new DateTimeRange { EndBefore = end } as IFilter)
             };
 
             // ...then search for the data using the searchFilter. Search results in NODES will have a max amount of hits. Even though
