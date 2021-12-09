@@ -23,24 +23,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d9a7d430-c028-4844-9d62-fb7af9ee13a7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/contentModel.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NODES-Metering-System-Sample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NODES-Metering-System-Sample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/appsettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DisabledMethodsStorage">
+    <option name="disabledMethods">
+      <set>
+        <option value="System.Private.CoreLib : System.Runtime.CompilerServices.TaskAwaiter&lt;TResult&gt; : GetResult ()" />
+      </set>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/99/4a1c3772/IFilter.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DE87D0D6-E60B-4760-B508-CB761CDAD0BA/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/6e/9a37a364/TextMatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/08/f389cb07/MeterReading.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/99/4a1c3772/IFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a221793e4b13ae450dccb6e74f6985a273b27d67dca5c4bc2c2e56df33bfe7/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/6e/9a37a364/TextMatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DE87D0D6-E60B-4760-B508-CB761CDAD0BA/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04C56102-6ED6-4623-9A22-0ED4ED45CE99/61/fcf2e5ea/OneOfMatcher.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04c561026ed646239a220ed4ed45ce9937400/09/86b574c9/IMeterReadingService.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -52,6 +72,9 @@
       </list>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1yG0bcKvQ1rfX0EjL4qcfPvvYSB" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,6 +85,7 @@
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.30047226" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.5346359" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -98,6 +122,13 @@
       <workItem from="1632124650049" duration="1075000" />
       <workItem from="1632298522176" duration="9746000" />
       <workItem from="1632380359341" duration="616000" />
+      <workItem from="1632387528208" duration="55000" />
+      <workItem from="1632902112884" duration="1044000" />
+      <workItem from="1633005845655" duration="1347000" />
+      <workItem from="1636982562584" duration="861000" />
+      <workItem from="1638537330873" duration="708000" />
+      <workItem from="1639035323929" duration="2489000" />
+      <workItem from="1639038077481" duration="3682000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631863012579</created>
@@ -134,12 +165,20 @@
       <option name="project" value="LOCAL" />
       <updated>1631887275491</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Update sample and do some appsettings changes">
+      <created>1632387574453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1632387574453</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +191,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
@@ -160,127 +198,7 @@
     <MESSAGE value="Add pseudo code" />
     <MESSAGE value="Add authentication" />
     <MESSAGE value="Create meter reading data" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create meter reading data" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="489" height="464" key="DebuggerActiveHint" timestamp="1632318519025">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="489" height="464" key="DebuggerActiveHint/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632318519025" />
-    <state width="1725" height="267" key="GridCell.Tab.0.bottom" timestamp="1632320793164">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.0.bottom/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793164" />
-    <state width="1725" height="267" key="GridCell.Tab.0.center" timestamp="1632320793163">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.0.center/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793163" />
-    <state width="1725" height="267" key="GridCell.Tab.0.left" timestamp="1632320793163">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.0.left/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793163" />
-    <state width="1725" height="267" key="GridCell.Tab.0.right" timestamp="1632320793163">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.0.right/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793163" />
-    <state width="1725" height="267" key="GridCell.Tab.1.bottom" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.1.bottom/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.1.center" timestamp="1632320793167">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.1.center/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793167" />
-    <state width="1725" height="267" key="GridCell.Tab.1.left" timestamp="1632320793166">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.1.left/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793166" />
-    <state width="1725" height="267" key="GridCell.Tab.1.right" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.1.right/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.2.bottom" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.2.bottom/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.2.center" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.2.center/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.2.left" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.2.left/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.2.right" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.2.right/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.3.bottom" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.3.bottom/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.3.center" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.3.center/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.3.left" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.3.left/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.3.right" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.3.right/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.4.bottom" timestamp="1632320793169">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.4.bottom/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793169" />
-    <state width="1725" height="267" key="GridCell.Tab.4.center" timestamp="1632320793169">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.4.center/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793169" />
-    <state width="1725" height="267" key="GridCell.Tab.4.left" timestamp="1632320793168">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.4.left/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793168" />
-    <state width="1725" height="267" key="GridCell.Tab.4.right" timestamp="1632320793169">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="1725" height="267" key="GridCell.Tab.4.right/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632320793169" />
-    <state x="552" y="318" key="Vcs.Push.Dialog.v2" timestamp="1631887279382">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state x="552" y="318" key="Vcs.Push.Dialog.v2/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1631887279382" />
-    <state width="968" height="593" key="XDebugger.FullValuePopup" timestamp="1632319014145">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state width="968" height="593" key="XDebugger.FullValuePopup/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632319014145" />
-    <state x="777" y="499" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1632298522630">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state x="777" y="499" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632298522630" />
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup" timestamp="1632298550850">
-      <screen x="0" y="0" width="1920" height="1170" />
-    </state>
-    <state x="623" y="257" width="672" height="678" key="search.everywhere.popup/1920.0.1504.983/0.0.1920.1170/-1920.0.1920.1170@0.0.1920.1170" timestamp="1632298550850" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Program.cs</url>
-          <line>65</line>
-          <properties documentPath="C:\projects\nodes-metering-system-sample\Program.cs" initialLine="62">
-            <startOffsets>
-              <option value="2758" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2853" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Update sample and do some appsettings changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update sample and do some appsettings changes" />
   </component>
 </project>
