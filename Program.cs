@@ -16,10 +16,11 @@ namespace Nodes.MeteringSystem.Sample
     {
         private readonly ServiceProvider _services;
 
-        private static async Task Main(string[] args)
-        {
+        private Program() =>
+            _services = BuildServiceProvider();
+
+        private static async Task Main(string[] args) => 
             await new Program().Run();
-        }
 
         private async Task Run()
         {
@@ -119,8 +120,9 @@ namespace Nodes.MeteringSystem.Sample
                 .AddJsonFile("appsettings.local.json", optional: true)
                 .Build();
 
-        private Program() =>
-            _services = new ServiceCollection()
+        private static ServiceProvider BuildServiceProvider()
+        {
+            return new ServiceCollection()
 
                 // Read appsettings and appsettings. Customize if needed.
                 .AddSingleton<IConfiguration>(BuildConfigurationRoot())
@@ -146,6 +148,6 @@ namespace Nodes.MeteringSystem.Sample
                     ActivatorUtilities.CreateInstance<NodesClient>(x,
                         x.GetRequiredService<IConfiguration>().GetSection("APIUrl").Value))
                 .BuildServiceProvider();
-        
+        }
     }
 }
