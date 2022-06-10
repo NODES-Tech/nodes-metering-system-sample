@@ -11,7 +11,7 @@
       <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.0" />
       <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0" />
       <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
-      <PackageReference Include="Nodes.API.Http.Client" Version="1.3.175" />
+      <PackageReference Include="Nodes.API.Http.Client" Version="1.5.3" />
     </ItemGroup>
 
     <ItemGroup>

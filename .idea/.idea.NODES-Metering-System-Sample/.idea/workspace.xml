@@ -25,6 +25,7 @@
     <list default="true" id="d9a7d430-c028-4844-9d62-fb7af9ee13a7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NODES-Metering-System-Sample/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/NODES-Metering-System-Sample.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NODES-Metering-System-Sample.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +52,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/08/f389cb07/MeterReading.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/99/4a1c3772/IFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04c561026ed646239a220ed4ed45ce9937400/09/86b574c9/IMeterReadingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/513854b8e70f4b088fa3a2cef467022235800/46/435c2bcb/IMeterReadingService.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8a221793e4b13ae450dccb6e74f6985a273b27d67dca5c4bc2c2e56df33bfe7/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04C56102-6ED6-4623-9A22-0ED4ED45CE99/61/fcf2e5ea/OneOfMatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/6e/9a37a364/TextMatcher.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/DE87D0D6-E60B-4760-B508-CB761CDAD0BA/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04C56102-6ED6-4623-9A22-0ED4ED45CE99/61/fcf2e5ea/OneOfMatcher.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/04c561026ed646239a220ed4ed45ce9937400/09/86b574c9/IMeterReadingService.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5EFDC660-C271-46A7-89B6-1314292CAC89/99/4a1c3772/IFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/9711e6b32d7315709a6ef3d7cc738f60fa6faa9fea364e6cb7cdc983c3ff/JsonConfigurationExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,6 +133,12 @@
       <workItem from="1641816970114" duration="1840000" />
       <workItem from="1642675587536" duration="47000" />
       <workItem from="1643021933054" duration="415000" />
+      <workItem from="1643022841983" duration="56000" />
+      <workItem from="1644408209046" duration="768000" />
+      <workItem from="1644409767916" duration="624000" />
+      <workItem from="1644411879834" duration="315000" />
+      <workItem from="1651232215673" duration="599000" />
+      <workItem from="1654843985335" duration="1390000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1631863012579</created>
@@ -180,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639050894958</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Update NODES ClientSDK nuget package">
+      <created>1643022880425</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643022880425</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,23 +224,37 @@
     <MESSAGE value="Create meter reading data" />
     <MESSAGE value="Update sample and do some appsettings changes" />
     <MESSAGE value="Add more comments to example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add more comments to example" />
+    <MESSAGE value="Update NODES ClientSDK nuget package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update NODES ClientSDK nuget package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Program.cs</url>
-          <line>29</line>
+          <line>30</line>
           <properties documentPath="C:\projects\nodes-metering-system-sample\Program.cs" initialLine="29" containingFunctionPresentation="method 'Run'">
             <startOffsets>
-              <option value="894" />
+              <option value="917" />
             </startOffsets>
             <endOffsets>
-              <option value="951" />
+              <option value="974" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Program.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\projects\nodes-metering-system-sample\Program.cs" initialLine="38" containingFunctionPresentation="method 'Run'">
+            <startOffsets>
+              <option value="1538" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1659" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

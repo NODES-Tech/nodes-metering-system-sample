@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Rest;
+using Nodes.API.Enums;
 using Nodes.API.Http.Client.Support;
 using Nodes.API.Models;
 using Nodes.API.Queries;
@@ -105,7 +106,8 @@ namespace Nodes.MeteringSystem.Sample
                     AssetGridAssignmentId = aga.Id,
                     PeriodFrom = @from,
                     PeriodTo = @from.AddMinutes(1),
-                    AveragePowerProduction = 1
+                    Quantity = 1,
+                    QuantityType = QuantityType.Power
                 }));
 
                 from = from.AddMinutes(1);
